@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="success.html" method="post">
+        <table bgcolor="#eeeeee" align="center" cellpadding="10" border="2" width="70%">
+            <tr>
+                <td colspan="2" align="center">
+                    <h1>Search Bus route</h1>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">Enter source city</td>
+                <td>
+                    <input type="text" name="source" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Enter destination city</td>
+                <td>
+                    <input type="text" name="destination" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Select bus type</td>
+                <td>
+                    <label for="local">
+                        <input id="local" type="radio" name="bustype" value="1" required   /> Local
+                    </label>
+                    <label for="express">
+                        <input id="express" type="radio" name="bustype" value="2" required   /> Express
+                    </label>
+                    <label for="Sleeper">
+                        <input id="Sleeper" type="radio" name="bustype" value="3" required   /> Sleeper
+                    </label>
+                    <label for="ac">
+                        <input id="ac" type="radio" name="bustype" value="4" required   /> AC
+                    </label>
+                    <label for="ac_sleeper">
+                        <input id="ac_sleeper" type="radio" name="bustype" value="5" required   /> AC Sleeper
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="search Route" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
