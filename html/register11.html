@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register with us</h1> <hr/>
+    <form action="success.html" method="post" enctype="multipart/form-data">
+        <table border="2" align="center" cellpadding="10" width="50%">
+            <tr>
+               <td> 
+                    <input type="text" name="fullname" required placeholder="name father surname" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Birthdate</strong> <br/>
+                    <input type="date" name="dob" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Gender</strong> <br/>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male" value="1" required /> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female" value="0" required /> Female 
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="city" required placeholder="your city" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="pincode" required placeholder="city pincode" />
+                </td>
+            </tr>
+            <tr>
+               <td>
+                    <strong>Select your education</strong> <br/>
+                    <label for="bca">
+                        <input type="checkbox" name="bca" value="bca" id="bca"  /> BCA
+                    </label>
+                    <label for="mca">
+                        <input type="checkbox" name="mca" value="mca" id="mca"  /> MCA
+                    </label>
+                    <label for="bscit">
+                        <input type="checkbox" name="bscit" value="bscit" id="bscit"  /> BSC-IT
+                    </label>
+                    <label for="beit">
+                        <input type="checkbox" name="beit" value="beit" id="beit"  /> BE-IT
+                    </label>
+
+               </td>
+            </tr>
+            <tr>
+               <td>
+                    <select name="country" id="country" required>
+                        <option value="">Select country</option>
+                        <option value="India">India</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Åland Islands">Åland Islands</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+               </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="language" id="language" multiple>
+                        <option value="">Select language</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Bengali">Bengali</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Marathi">Marathi</option>
+                        <option value="Gujarati">Gujarati</option>
+                        <option value="Punjabi">Punjabi</option>
+                        <option value="Odia">Odia</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Malayalam">Malayalam</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Select photo</strong>
+                    <input type="file" name="photo" id="photo" required 
+                    accept="image/*" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Address</strong> <br/>
+                    <textarea name="address" id="address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" value="Register" name="register" />
+                    <input type="reset" name="reset" value="clear all" />
+                    <input type="button" name="button" value="I can do anything " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
