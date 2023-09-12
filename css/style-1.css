@@ -1,0 +1,42 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body 
+{
+    color:coral;
+    background-color: #dfdac0;
+}
+#courses 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.course 
+{
+    background-color: #f2f1ef;
+    width: calc(25% - 20px);
+}
+.course>* 
+{
+    padding:10px;
+}
+.course>h2 
+{
+    text-align: center;
+    background-color: #b1b6a4;
+    color:white;
+}
+.course>img 
+{
+    /* display image in center of it's parent */
+    display:block;
+    margin:auto;
+
+    /* display image in round shape  */
+    height:200px;
+    width: 200px;
+    border-radius: 200px;
+}
