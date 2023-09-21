@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Example of Grid</title>
+     <style>
+          div {
+               padding: 25px;
+               margin: 10px;
+               font-size: 1.5rem;
+          }
+
+          #parent_div {
+               display: grid;
+               background-color: white;
+          }
+
+          @media (min-width: 1281px) {
+               #parent_div {
+                    grid-template-columns: 1fr 1fr 1fr 1fr 2fr ;
+               }
+               div
+               {
+                    background-color: rgb(221, 193, 247);
+               }
+          }
+
+          @media (min-width: 1025px) and (max-width: 1280px) {
+               #parent_div {
+                    grid-template-columns: auto auto auto auto;
+               }
+               div
+               {
+                    background-color: rgb(244, 232, 162);
+               }
+          }
+
+          @media (min-width: 768px) and (max-width: 1024px) {
+               #parent_div {
+                    grid-template-columns: auto auto auto;
+               }
+               div
+               {
+                    background-color: rgb(167, 167, 242);
+               }
+          }
+
+          @media (min-width: 481px) and (max-width: 767px) {
+               #parent_div {
+                    grid-template-columns: auto auto;
+               }
+               div
+               {
+                    background-color: rgb(219, 247, 176);
+               }
+          }
+
+          @media (min-width: 320px) and (max-width: 480px) {
+               #parent_div {
+                    grid-template-columns: auto;
+               }
+               div
+               {
+                    background-color: rgb(255, 188, 188);
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <h1 align="center">
+          Example of Grid
+     </h1>
+     <hr>
+
+     <div id="parent_div">
+          <div>
+               <span>M s Dhoni</span>
+          </div>
+
+          <div>
+               <span>Virat Kholi</span>
+          </div>
+
+          <div>
+               <span>Rohit sharma</span>
+          </div>
+
+          <div>
+               <span>Ravendra Jadeja</span>
+          </div>
+
+          <div>
+               <span>Bhuvneshwar Kumar</span>
+          </div>
+
+          <div>
+               <span>Shikar Dhawan</span>
+          </div>
+
+          <div>
+               <span>Jasprit Bumra</span>
+          </div>
+
+          <div>
+               <span>Shubman Gill</span>
+          </div>
+
+          <div>
+               <span>Rishab Pant</span>
+          </div>
+
+          <div>
+               <span>K L Rahul </span>
+          </div>
+
+          <div>
+               <span>Hardik Pandya</span>
+          </div>
+
+          <div>
+               <span>Krunal Pandya</span>
+          </div>
+     </div>
+</body>
+
+</html>
