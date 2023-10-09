@@ -1,0 +1,15 @@
+decision making statement 
+1) statement if (simple decision makeing )
+    in program when we want to execute some code only if some condition is true, then we use statement if in program.   
+    in if decision making, we check some condition using relational operators (< > <= >= == != === !==)
+    if the condition is evaluated as true, then we will execute few line of code. otherwise not. 
+
+    syntax 
+    if(condition)
+    {
+        //line 1 
+        //line 2
+        ......
+    }
+    line 10 
+    
