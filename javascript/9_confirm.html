@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>confirm dialog box example</h1> <hr/>
+    <p align="right">
+        <a href="success.html" onclick="return confirm_activation();">Activate Subscription (Charges 500 Rs per month)</a>
+        
+    </p>
+    <script>
+        //user defined function 
+        function confirm_activation()
+        {
+            var response = confirm("Are you sure you want to purcharse this subscription?");
+            alert(response);
+            return response;
+        }
+    </script>
+</body>
+</html>
